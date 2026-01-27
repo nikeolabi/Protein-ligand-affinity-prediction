@@ -13,7 +13,7 @@ This project implements deep learning models for predicting protein-ligand bindi
 ## Repository Structure
 
 ```
-protein-ligand affinity/
+protein-ligand_affinity/
 ├── Project_Protein_Ligand_Affinity Part 1.ipynb  # DeepDTA implementation
 ├── Project_Protein_Ligand_Affinity Part 2.ipynb  # ESM-2 + Morgan approach
 ├── README.md                                            # This file
@@ -22,18 +22,18 @@ protein-ligand affinity/
 │   ├── test_task1.csv
 │   ├── test_task2_transfer.csv
 │   └── test_task3_screening.csv
-└── models/                                              # Saved models (generated)
-    ├── deepdta_model.keras                              # Model 1
+├── cached_embeddings/                                   # ESM-2 protein embeddings cache
+│   ├── protein_embeddings.pkl                           # Cached ESM-2 embeddings
+│   └── embedding_metadata.json                          # Embedding configuration info
+└── saved_models/                                        # Saved models (generated)
+    ├── deepdta_model_1.keras                             # Model 1
     ├── deepdta_model_2.keras                            # Model 2  
     ├── deepdta_model_3.keras                            # Model 3
     ├── deepdta_model_cnn_lstm_001.keras                 # Model 4
     ├── deepdta_weights.weights.h5
-    ├── training_history.pkl
-    ├── training_history_2.pkl
-    ├── training_history_3.pkl
-    ├── training_history_cnn_lstm_001.pkl
-    └── saved_models/                                    # Model checkpoints
-        └── cnn_lstm/                                    # Model 4 checkpoints
+    ├── ...
+    └── checkpoints/                                    # Model checkpoints (used for Model 4)
+
 ```
 
 ## Approaches
