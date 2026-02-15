@@ -165,8 +165,8 @@ The project uses protein-ligand binding affinity data with the following structu
 
 **Data Format:**
 ```csv
-protein_sequence,compound_smiles,label
-MKVLWAALLVTFLAGCQAKVEQAVETEPEPEL...,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,5.23
+protein_sequence,   compound_smiles,   label
+MKVLWAALLVTFLAGCQAKVEQAVETEPEPEL...,   CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,    5.23
 ```
 
 Where `label` represents pIC50 values (negative log of IC50 in molar units).
@@ -194,7 +194,7 @@ Where `label` represents pIC50 values (negative log of IC50 in molar units).
 ## Performance Benchmarks
 
 The models are evaluated against literature benchmarks:
-- **DeepDTA Reference**: ~0.26 MAE on similar datasets
+- **DeepDTA Reference**: ~0.26 MSE on similar datasets
 - **Validation-Test Gap**: Monitor for overfitting assessment
 
 ## Usage
